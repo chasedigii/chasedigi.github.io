@@ -32,13 +32,18 @@ function analyzeImage(src, label) {
 }
 
 async function runAnalysis() {
-  const normalImages = [
-    "data/normal/n1.png"
-  ];
+const normalImages = [
+  "data/normal/n1.png",
+  "data/normal/n2.png",
+  "data/normal/n3.png"
+];
 
-  const pneumoniaImages = [
-    "data/pneumonia/p1.png"
-  ];
+const pneumoniaImages = [
+  "data/pneumonia/p1.png",
+  "data/pneumonia/p2.png",
+  "data/pneumonia/p3.png"
+];
+
 
   for (const img of normalImages) {
     await analyzeImage(img, "Normal");
